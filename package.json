@@ -1,12 +1,23 @@
 {
   "name": "@reecem/svelte-slicezone",
-  "version": "0.0.2",
+  "version": "0.0.3",
 	"author": {
 		"email": "zsh.rce@gmail.com",
 		"name": "ReeceM",
 		"url": "https://twitter.com/iexistin3d"
 	},
+	"description": "SvelteKit SliceZone component for Prismic SliceMachine",
+	"homepage": "https://github.com/reecem/svelte-slicezone",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/reecem/svelte-slicezone.git"
+  },
+	"bugs": {
+    "url": "https://github.com/reecem/svelte-slicezone/issues"
+  },
 	"license": "ISC",
+	"svelte": "index.js",
+	"type": "module",
 	"keywords": [
     "Svelte",
     "Prismic",
@@ -22,7 +33,6 @@
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
-  "svelte": "index.js",
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
@@ -39,6 +49,5 @@
     "svelte2tsx": "^0.4.12",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
-  },
-  "type": "module"
+  }
 }

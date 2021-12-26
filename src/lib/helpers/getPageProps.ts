@@ -10,8 +10,12 @@ interface queryProps {
 	},
 }
 
-// declare function getPageProps(props: queryProps): object;
-
+/**
+ * Fetch a document and load up the list of slices
+ *
+ * @param props {queryProps}
+ * @returns
+ */
 export default async function getPageProps(props: queryProps): Promise<object> {
 	const {
 		client,

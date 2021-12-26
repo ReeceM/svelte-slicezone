@@ -12,13 +12,17 @@
 </script>
 
 {#if allSlices[sliceName]}
-	<svelte:component this={allSlices[sliceName]} {slice} {...$$restProps} />
+	<svelte:component
+		this={allSlices[sliceName]}
+		{slice}
+		{...$$restProps}
+	/>
 {/if}
 
 {#if dev && !allSlices[sliceName]}
 	<div class="slicezone__not-found">
 		<h2>
-			Slice <code>"{sliceName}"</code> not found.
+			Slice <code>`{sliceName}`</code> not found.
 		</h2>
 		<p>Check that you registered this component in your slices library!</p>
 	</div>
